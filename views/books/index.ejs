@@ -29,11 +29,5 @@
     </div>
 
 </form>
-
-<div class="book-row">
-    <% books.forEach(book => { %>
-        <a href="/books/<%= book.id %>">
-        <img class="book-image" src="<%= book.coverImagePath %>" />
-        </a>
-        <% }) %>
-</div>
+<br/>
+<%- include('../partials/bookGrid', { books: books}) %>

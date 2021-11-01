@@ -5,6 +5,8 @@
 @import 'shared/header.css';
 @import 'shared/buttons.css';
 @import 'shared/form.css';
+@import 'shared/author.css';
+@import 'shared/books.css';
 :root {
     font-family: 'Gotham Rounded';
     font-size: large;
@@ -41,8 +43,6 @@ body {
     padding-top: 2rem;
 }
 
-.book-image {
-    border: 1px solid var(--color-grey1);
-    height: 150px;
-    width: 100px;
+.error-message {
+    color: hsl(var(--color-danger-hue), 100%, 50%);
 }
