@@ -4,7 +4,7 @@
 @import 'shared/variables.css';
 @import 'shared/header.css';
 @import 'shared/buttons.css';
-@import 'shared/forms.css';
+@import 'shared/form.css';
 :root {
     font-family: 'Gotham Rounded';
     font-size: large;
@@ -24,6 +24,7 @@ body {
 .inner-container {
     margin: 0 2rem;
     border: none;
+    width: auto;
 }
 
 .page-header {
