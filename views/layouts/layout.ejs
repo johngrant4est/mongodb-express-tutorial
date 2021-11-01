@@ -13,16 +13,23 @@
     <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
     <script defer src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
     <script defer src="/javascripts/fileUpload.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="/stylesheets/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="/stylesheets/main.css" />
 
     <title>MongoDB-Express Tutorial</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            <%- include('../partials/header.ejs') %>
+        </div>
+        <div class="inner-container">
+            <%- include('../partials/errorMessage.ejs') %>
+                <%- body %>
+        </div>
 
-    <%- include('../partials/header.ejs') %>
-        <%- include('../partials/errorMessage.ejs') %>
-            <%- body %>
-
+    </div>
 </body>
 
 
